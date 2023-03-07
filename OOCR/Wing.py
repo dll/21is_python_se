@@ -11,8 +11,5 @@
 
 class Wing:
 
-    def Wing(self):
-        pass
-
     def Wing(self,lr):
-       print("my " + lr);
+        print("my " + lr);

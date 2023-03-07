@@ -14,6 +14,7 @@ from Climate import Climate
 from ClimateType import ClimateType
 from DonaldDuck import DonaldDuck
 from Duck import Duck
+from OOCR.Wing import Wing
 from Oxygen import Oxygen
 from Penguin import Penguin
 from Water import Water

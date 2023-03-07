@@ -13,11 +13,12 @@ from Oxygen import Oxygen
 
 class Bird(Animal):
 
-    m_Wing: Wing
+    m_lWing: Wing
+    m_rWing: Wing
 
     def Bird(self):
-        m_Wing[0]= Wing(" left wing\n");
-        m_Wing[1]= Wing(" right wing\n");
+        m_lWing= Wing(" left wing\n");
+        m_rWing= Wing(" right wing\n");
 
     def metabolize(self, o, w):
         print("bird Depends on Oxygen and Water\n");
