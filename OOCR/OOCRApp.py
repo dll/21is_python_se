@@ -1,3 +1,5 @@
+# encoding=utf-8
+
 #######################################################
 # 
 # OOCRApp.py
@@ -14,7 +16,6 @@ from Climate import Climate
 from ClimateType import ClimateType
 from DonaldDuck import DonaldDuck
 from Duck import Duck
-from OOCR.Wing import Wing
 from Oxygen import Oxygen
 from Penguin import Penguin
 from Water import Water
@@ -24,8 +25,8 @@ from WildGoose import WildGoose
 
 class OOCRApp:
     def Aggregation(self):
-        m_WildGoose = [WildGoose(), WildGoose(), WildGoose()];
-        wgg = WildGeeseGroup();  # m_WildGoose
+        wgs = [WildGoose(), WildGoose(), WildGoose()];
+        wgg = WildGeeseGroup(wgs);
         wg4 = WildGoose();
         wgg.joinWildGeeseGroup(wg4);
         wg5 = WildGoose();
@@ -40,7 +41,7 @@ class OOCRApp:
 
         p = Penguin();
         c = Climate(ClimateType.coldzone.value);
-        p.setM_Climate(c);
+        p.setclimate(c);
 
     def Composition(self):
         angryBird = Bird();
@@ -74,12 +75,13 @@ if __name__ == '__main__':
     app = OOCRApp();
     while True:
         system("cls")
-        print("1-Generalization  2-Relization  3-Composition 4-Aggregation 5-Association 6-Dependency 7-Polymorphic")
-        n=int(input("Please input from 1 to 7 , 0 to exit\n"))
-        match (n):
+        print("1-Generalization继承  2-Realization实现  3-Composition组合 4-Aggregation聚合 5-Association关联 6-Dependency依赖 "
+              "7-Polymorphic多态")
+        n = int(input("Please input from 1 to 7 , 0 to exit\n"))
+        match n:
             case 0:
                 break
-            case  1:
+            case 1:
                 app.Generalization();
             case 2:
                 app.Relization();

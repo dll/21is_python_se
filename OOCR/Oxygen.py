@@ -11,5 +11,5 @@
 
 class Oxygen:
 
-    def Oxygen(self):
-        print("Depends on Oxygen\n");
+    def __init__(self):
+        print("my is oxygen");

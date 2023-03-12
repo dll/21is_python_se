@@ -12,14 +12,15 @@ from abc import ABC, abstractmethod
 from Water import Water
 from Oxygen import Oxygen
 
+
 class Animal(ABC):
 
-	@abstractmethod
-	def metabolize(self, o, w):
-		print("Oxygen Water\n");
+    @abstractmethod
+    def metabolize(self, o, w):
+        print("Animal depends on Oxygen Water: parameter of metabolize");
 
-	@abstractmethod
-	def propagate(self):
-		print("Oxygen Water \n");
-		o = Oxygen();
-		w = Water();
+    @abstractmethod
+    def propagate(self):
+        print("Animal depends on Oxygen Water: local variable of propagate");
+        o = Oxygen();
+        w = Water();

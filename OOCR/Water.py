@@ -1,4 +1,4 @@
-#######################################################
+######self=None########################################
 # 
 # Water.py
 # Python implementation of the Class Water
@@ -11,5 +11,5 @@
 
 class Water:
 
-    def Water(self):
-        print("Depends on water\n");
+    def __init__(self):
+        print("my is water");

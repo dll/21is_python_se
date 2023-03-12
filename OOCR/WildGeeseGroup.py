@@ -15,27 +15,24 @@ from WildGoose import WildGoose
 class WildGeeseGroup:
     count = 3
 
-    m_WildGoose = [sys.maxsize / 1000000]
+    wildGeese = []
 
     def joinWildGeeseGroup(self, wg):
-        self.count = self.count + 1
-        print("joinWildGeeseGroup has " + str(self.count) + " WildGeese!\n");
-        if self.count < sys.maxsize / 1000000:
-            self.m_WildGoose.append(wg);
+        self.count += 1
+        print("joinWildGeeseGroup has " + str(self.count) + " WildGeese!");
+        if self.count < sys.maxsize:
+            self.wildGeese.append(wg);
 
         else:
             print("WildGeeseGroup Too Big");
 
     def leaveWildGeeseGroup(self, wg):
-        self.count = self.count - 1
-        print("A WildGeese leaved. " + str(self.count) + " WildGeese!\n");
-        self.m_WildGoose.remove(wg);
+        self.count -= 1
+        print("A WildGeese leaved. " + str(self.count) + " WildGeese!");
+        self.wildGeese.remove(wg);
 
-    def WildGeeseGroup(self):
-        pass
-
-    def WildGeeseGroup(self, wg):
-        print("WildGeeseGroup Total WildGeese " + self.m_WildGoose.length + "\n");
-        for i in range(wg.length):
-            self.m_WildGoose[i] = wg[i]
-        print("WildGeeseGroup initial size " + str(self.count) + "\n");
+    def __init__(self, wgs):
+        print("WildGeeseGroup Total WildGeese " + str(sys.maxsize))
+        for i in range(0, len(wgs)):
+            self.wildGeese.append(wgs[i])
+        print("WildGeeseGroup initial size " + str(len(wgs)));

@@ -13,10 +13,10 @@ from Bird import Bird
 class Duck(Bird):
 
     def Duck(self):
-        print("my is a Duck\n");
+        print("my is a Duck");
 
     def propagate(self):
-        print("duck egg 70g\n");
+        print("propagate: duck egg 70g");
 
     def quack(self):
-        print("Duck Quack\n");
+        print("Duck Quack");

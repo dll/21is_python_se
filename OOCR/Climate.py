@@ -9,31 +9,32 @@
 #######################################################
 from ClimateType import ClimateType
 
+
 class Climate:
-	
-	def __init__(self, ct):
-		self._ct = ct
 
-	@property
-	def ct(self,ct):
-		self._ct=ct;
+    def __init__(self, ct):
+        self._ct = ct
 
-	def toString(self):
-		ct=self._ct;
-		# switch(ct):
-		# 	case coldzone:
-		# 		c="CodeZone";
-		# 		break;
-		# 	case temperatezone:
-		# 		c="TemperateZone";
-		# 		break;
-		# 	case torridzone:
-		# 		c="TorridZone";
-		# 		break;
-		if ct==1:
-			c='CodeZone'
-		elif ct==2:
-			c='TemperateZone'
-		elif ct==3:
-			c='TorridZone'
-		return c+"\n";
+    @property
+    def ct(self, ct):
+        self._ct = ct;
+
+    def toString(self):
+        ct = self._ct;
+        # switch(ct):
+        # 	case coldzone:
+        # 		c="CodeZone";
+        # 		break;
+        # 	case temperatezone:
+        # 		c="TemperateZone";
+        # 		break;
+        # 	case torridzone:
+        # 		c="TorridZone";
+        # 		break;
+        if ct == 1:
+            c = 'CodeZone'
+        elif ct == 2:
+            c = 'TemperateZone'
+        elif ct == 3:
+            c = 'TorridZone'
+        return c + "\n";

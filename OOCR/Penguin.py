@@ -12,14 +12,15 @@ from Bird import Bird
 
 
 class Penguin(Bird):
-    m_Climate: Climate
+
+    climate: Climate
+
+    def __init__(self):
+        print("my is a Penguin");
+
+    def setclimate(self, c):
+        self.climate = c;
+        print("Penguin living  Climate:" + self.climate.toString());
 
     def propagate(self):
-        print("Penguin Egg 500g\n");
-
-    def Penguin(self):
-        print("my is a Penguin\n");
-
-    def setM_Climate(self, c):
-        self.m_Climate = c;
-        print("Penguin living  Climate:" + self.m_Climate.toString());
+        print("propagate: Penguin Egg 500g");

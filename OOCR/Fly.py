@@ -9,6 +9,7 @@
 #######################################################
 from abc import ABCMeta, abstractmethod
 
+
 class Fly(metaclass=ABCMeta):
 
     @abstractmethod

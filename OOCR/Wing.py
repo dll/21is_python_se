@@ -11,5 +11,5 @@
 
 class Wing:
 
-    def Wing(self,lr):
+    def __init__(self, lr):
         print("my " + lr);

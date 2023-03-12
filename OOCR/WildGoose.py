@@ -12,11 +12,12 @@ from Bird import Bird
 
 
 class WildGoose(Bird, Fly):
+
+    def __init__(self):
+        print("my is a WildGoose");
+
     def fly(self):
-        print("Flying in herringbone formation!\n");
+        print("Flying in herringbone formation!");
 
     def propagate(self):
-        print("WildGoose egg 150g\n");
-
-    def WildGoose(self):
-        print("my is a WildGoose\n");
+        print("propagate: WildGoose egg 150g");

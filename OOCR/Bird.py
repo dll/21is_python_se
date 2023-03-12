@@ -11,17 +11,18 @@ from Animal import Animal
 from Water import Water
 from Oxygen import Oxygen
 
+
 class Bird(Animal):
+    __rWing: Wing
+    __lWing: Wing
 
-    m_lWing: Wing
-    m_rWing: Wing
-
-    def Bird(self):
-        m_lWing= Wing(" left wing\n");
-        m_rWing= Wing(" right wing\n");
+    def __init__(self):
+        lWing = Wing(" left wing");
+        rWing = Wing(" right wing");
+        print("Bird have Two Wings!")
 
     def metabolize(self, o, w):
-        print("bird Depends on Oxygen and Water\n");
-	
+        print("bird Depends on Oxygen and Water: parameters of metabolize");
+
     def propagate(self):
-        print("Bird egg 5g\n");
+        print("Bird egg 5g");

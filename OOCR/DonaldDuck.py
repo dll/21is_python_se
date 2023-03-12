@@ -12,17 +12,17 @@ from Speak import Speak
 
 
 class DonaldDuck(Speak):
-    m_Duck: Duck  # Duck
+    duck: Duck  # Duck
 
     def DonaldDuck(self):
         pass
 
-    def setm_duck(self, d):
-        self.m_Duck = d
+    def setduck(self, d):
+        self.duck = d
 
     @staticmethod
     def quackSpeak():
-        print("staticmethod\n");
+        print("staticmethod");
 
     def speak(self):
-        print("personification\n");
+        print("personification");
