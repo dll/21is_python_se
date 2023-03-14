@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ab187b6-fc1f-4a1e-9742-21e4d8826f6b" name="Changes" comment="Initial commit">
+    <list default="true" id="9ab187b6-fc1f-4a1e-9742-21e4d8826f6b" name="Changes" comment="OOCRV5.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOCR/Horse.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOCR/Horse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOCR/HorseGroup.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOCR/HorseGroup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OOCR/OOCRApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/OOCR/OOCRApp.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,27 +15,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Merge.Settings">
-    <option name="BRANCH" value="develop" />
+  <component name="Git.Pull.Settings">
     <option name="OPTIONS">
       <set>
-        <option value="NO_FF" />
+        <option value="REBASE" />
       </set>
     </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="release" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2Mgc2qrCq6z65zjiecqNnEeELdN" />
+  <component name="ProjectId" id="2MxIeXltFVLw41cBiDArUIMuXrI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -42,51 +45,47 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalTools&quot;
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration name="OOCRApp" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
-      <module name="21is_python_se" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Program Files\Python311\python.exe" />
-      <option name="SDK_NAME" value="C:\Program Files\Python311\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/OOCR" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/OOCR/OOCRApp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task id="LOCAL-00001" summary="Initial commit">
-      <created>1678190149950</created>
+    <task id="LOCAL-00001" summary="OOCRV2.0">
+      <created>1678631950449</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1678190149950</updated>
+      <updated>1678631950449</updated>
+    </task>
+    <task id="LOCAL-00002" summary="OOCRV4.0">
+      <created>1678632341378</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1678632341378</updated>
     </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9ab187b6-fc1f-4a1e-9742-21e4d8826f6b" name="Changes" comment="Initial commit" />
-      <created>1678192461829</created>
+      <changelist id="9ab187b6-fc1f-4a1e-9742-21e4d8826f6b" name="Changes" comment="OOCRV4.0" />
+      <created>1678702910047</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678192461829</updated>
+      <updated>1678702910047</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00003" summary="OOCRV5.0">
+      <created>1678768442079</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678768442079</updated>
+    </task>
+    <task id="LOCAL-00004" summary="OOCRV5.0">
+      <created>1678770158853</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678770158853</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -113,8 +112,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="新功能Horse和Leg类" />
-    <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="OOCRV4.0" />
+    <MESSAGE value="OOCRV2.0" />
+    <MESSAGE value="OOCRV5.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="OOCRV5.0" />
   </component>
 </project>

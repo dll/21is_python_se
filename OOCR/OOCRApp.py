@@ -16,6 +16,7 @@ from Climate import Climate
 from ClimateType import ClimateType
 from DonaldDuck import DonaldDuck
 from Duck import Duck
+from OOCR.Horse import Horse
 from Oxygen import Oxygen
 from Penguin import Penguin
 from Water import Water
@@ -25,54 +26,58 @@ from WildGoose import WildGoose
 
 class OOCRApp:
     def Aggregation(self):
-        wgs = [WildGoose(), WildGoose(), WildGoose()];
-        wgg = WildGeeseGroup(wgs);
-        wg4 = WildGoose();
-        wgg.joinWildGeeseGroup(wg4);
-        wg5 = WildGoose();
-        wgg.joinWildGeeseGroup(wg5);
-        wgg.leaveWildGeeseGroup(wg4);
+        wgs = [WildGoose(), WildGoose(), WildGoose()]
+        wgg = WildGeeseGroup(wgs)
+        wg4 = WildGoose()
+        wgg.joinWildGeeseGroup(wg4)
+        wg5 = WildGoose()
+        wgg.joinWildGeeseGroup(wg5)
+        wgg.leaveWildGeeseGroup(wg4)
 
     def Association(self):
-        dd = DonaldDuck();
-        d = Duck();
-        dd.speak();
-        d.quack();
+        dd = DonaldDuck()
+        d = Duck()
+        dd.speak()
+        d.quack()
 
-        p = Penguin();
-        c = Climate(ClimateType.coldzone.value);
-        p.setclimate(c);
+        p = Penguin()
+        c = Climate(ClimateType.coldzone.value)
+        p.setclimate(c)
 
     def Composition(self):
-        angryBird = Bird();
+        angryBird = Bird()
         angryBird.propagate()
 
     def Dependency(self):
-        minDuck = Duck();
-        minDuck.metabolize(Oxygen(), Water());
-        minDuck.propagate();
-        DonaldDuck.quackSpeak();
+        minDuck = Duck()
+        minDuck.metabolize(Oxygen(), Water())
+        minDuck.propagate()
+        DonaldDuck.quackSpeak()
 
     def Generalization(self):
-        bird = Bird();
-        bird.propagate();
-        bird.metabolize(Oxygen(), Water());
+        bird = Bird()
+        bird.propagate()
+        bird.metabolize(Oxygen(), Water())
+        horse = Horse()
+        horse.propagate()
 
     def Polymorphic(self):
-        bird = Duck();
-        bird.propagate();
-        bird = WildGoose();
-        bird.propagate();
-        bird = Penguin();
-        bird.propagate();
+        bird = Duck()
+        bird.propagate()
+        bird = WildGoose()
+        bird.propagate()
+        bird = Penguin()
+        bird.propagate()
+        horse = Horse()
+        horse.propagate()
 
     def Relization(self):
-        wg = WildGoose();
-        wg.fly();
+        wg = WildGoose()
+        wg.fly()
 
 
 if __name__ == '__main__':
-    app = OOCRApp();
+    app = OOCRApp()
     while True:
         system("cls")
         print("1-Generalization继承  2-Realization实现  3-Composition组合 4-Aggregation聚合 5-Association关联 6-Dependency依赖 "
@@ -82,19 +87,19 @@ if __name__ == '__main__':
             case 0:
                 break
             case 1:
-                app.Generalization();
+                app.Generalization()
             case 2:
-                app.Relization();
+                app.Relization()
             case 3:
-                app.Composition();
+                app.Composition()
             case 4:
-                app.Aggregation();
+                app.Aggregation()
             case 5:
-                app.Association();
+                app.Association()
             case 6:
-                app.Dependency();
+                app.Dependency()
             case 7:
-                app.Polymorphic();
+                app.Polymorphic()
             case _:
                 print('Sorry! Please input from 1 to 7 !')
         system("pause")

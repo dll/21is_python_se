@@ -4,21 +4,24 @@ from Oxygen import Oxygen
 
 
 class Leg:
-    def Leg(self,leg):
-        print("my "+leg);
+    def __init__(self, leg):
+        print("my " + leg)
+
+
 class Horse(Animal):
     m_lbLeg: Leg
     m_rbLeg: Leg
     m_laLeg: Leg
     m_raLeg: Leg
-    def Horse(self):
-        m_lbLeg = Leg(" left back Leg\n");
-        m_rbLeg = Leg(" right back Leg\n");
-        m_laLeg = Leg(" left ahead Leg\n");
-        m_raLeg = Leg(" right ahead Leg\n");
+
+    def __init__(self):
+        m_lbLeg = Leg(" left back Leg")
+        m_rbLeg = Leg(" right back Leg")
+        m_laLeg = Leg(" left ahead Leg")
+        m_raLeg = Leg(" right ahead Leg")
 
     def metabolize(self, o, w):
-        print("Horse Depends on Oxygen and Water\n");
+        print("Horse Depends on Oxygen and Water")
 
     def propagate(self):
-        print("Horse generat small horse 30kg\n");
+        print("propagate: Mares give birth 30kg")
